@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/logo.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Median | Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                default: "#005555",
+                200: "#B2CCCC",
+              },
+              secondary: "#FAD266",
+              primaryGray: "#B2CCCC",
+              text: {
+                dark: "#6C717A",
+                darkPrimary: "#1D2433",
+                darkSecondary: "#4A505C",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="flex min-h-screen">
+      <div class="bg-primary-default md:w-1/2 flex flex-col items-center w-0">
+        <div class="flex flex-row my-[86px]">
+          <img src="assets/logo.svg" alt="Logo" />
+          <span class="text-white font-bold text-2xl mx-[3px]">Median</span>
+        </div>
+        <div
+          class="w-[134px] h-5 border rounded-lg border-primary-200 mb-[50px]"
+        ></div>
+        <div class="w-full mb-[67px]">
+          <form action="" method="post" class="w-full">
+            <div class="flex flex-col w-full">
+              <div class="flex flex-row items-center justify-center space-x-10">
+                <div class="w-[83px] h-[93px] flex flex-col items-center">
+                  <input
+                    class="w-full h-full flex flex-col items-center justify-center text-center text-white text-3xl px-5 outline-none rounded-xl border border-primaryGray bg-transparent focus:ring-1 ring-blue-700 mb-2"
+                    type="text"
+                    maxlength="1"
+                  />
+                  <div class="w-[44px] h-2.5 bg-secondary rounded-full"></div>
+                </div>
+                <div class="w-[83px] h-[93px] flex flex-col items-center">
+                  <input
+                    class="w-full h-full flex flex-col items-center justify-center text-center text-white text-3xl px-5 outline-none rounded-xl border border-primaryGray bg-transparent focus:ring-1 ring-blue-700 mb-2"
+                    type="text"
+                    maxlength="1"
+                  />
+                  <div class="w-[44px] h-2.5 bg-secondary rounded-full"></div>
+                </div>
+                <div class="w-[83px] h-[93px] flex flex-col items-center">
+                  <input
+                    class="w-full h-full flex flex-col items-center justify-center text-center text-white text-3xl px-5 outline-none rounded-xl border border-primaryGray bg-transparent focus:ring-1 ring-blue-700 mb-2"
+                    type="text"
+                    maxlength="1"
+                  />
+                  <div class="w-[44px] h-2.5 bg-secondary rounded-full"></div>
+                </div>
+                <div class="w-[83px] h-[93px] flex flex-col items-center">
+                  <input
+                    class="w-full h-full flex flex-col items-center justify-center text-center text-white text-3xl px-5 outline-none rounded-xl border border-primaryGray bg-transparent focus:ring-1 ring-blue-700 mb-2"
+                    type="text"
+                    maxlength="1"
+                  />
+                  <div class="w-[44px] h-2.5 bg-secondary rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <img src="assets/otp-logo.svg" alt="Illustration" class="mb-[137px]" />
+      </div>
+      <div
+        class="bg-white md:w-1/2 w-full flex flex-col items-center justify-center relative"
+      >
+        <div class="w-full flex justify-center my-[33px] md:hidden block">
+          <img src="assets/logo-color.svg" alt="Logo" />
+          <span class="font-bold text-primary-default text-xl">Median</span>
+        </div>
+        <div
+          class="md:shadow-md md:py-12 py-6 px-6 border w-9/12 md:w-[426px] md:h-[565px] mx-5 rounded-xl bg-white mb-36"
+        >
+          <h3
+            class="font-bold text-lg md:text-[32px] text-text-darkPrimary text-center"
+          >
+            Login
+          </h3>
+          <p
+            class="text-[11px] md:text-base text-text-darkSecondary font-normal text-center"
+          >
+            Selamat datang kembali!
+          </p>
+          <form action="" method="post" class="mt-5 space-y-5">
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-base md:text-sm text-text-darkSecondary font-semibold"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="bg-transparent border border-gray-300 text-gray-900 text-[11px] md:text-base rounded-md block w-full p-3"
+                required
+                placeholder="Masukkan Email"
+              />
+            </div>
+            <div class="relative">
+              <label
+                for="password"
+                class="block mb-2 text-base md:text-sm text-text-darkSecondary font-semibold"
+                >Kata Sandi</label
+              >
+              <input
+                type="password"
+                id="password"
+                class="bg-transparent border border-gray-300 text-gray-900 text-[11px] md:text-base rounded-md block w-full p-3"
+                required
+                placeholder="Masukkan Kata Sandi"
+              />
+              <div
+                class="absolute inset-y-0 right-0 pr-4 pt-8 flex items-center justify-center cursor-pointer"
+              >
+                <img src="assets/eye-icon.svg" alt="eye-icon" />
+              </div>
+            </div>
+            <div
+              class="flex justify-between text-[10px] md:text-sm text-primary-default"
+            >
+              <span class="block font-normal"
+                >Belum Punya Akun?
+                <a href="#" class="font-semibold hover:underline">Register</a>
+              </span>
+
+              <a href="#" class="font-semibold hover:underline"
+                >Lupa Password?</a
+              >
+            </div>
+            <button
+              type="submit"
+              class="bg-primary-default p-2 w-full text-white font-medium text-[11px] md:text-sm rounded hover:bg-[#0f8585] transition duration-300 ease-in-out"
+            >
+              Login
+            </button>
+            <span
+              class="block text-text-dark text-center text-[11px] md:text-sm"
+              >atau</span
+            >
+            <a
+              href="#"
+              class="hover:bg-gray-200 transition duration-300 ease-in-out flex items-center justify-center border block p-2 w-full text-text-darkPrimary text-center font-medium text-[11px] md:text-sm rounded"
+            >
+              <img
+                src="https://www.cdnlogo.com/logos/g/35/google-icon.svg"
+                alt="Google"
+                width="17px"
+                height="17px"
+                class="mx-2.5"
+              />
+              Login dengan Google
+            </a>
+          </form>
+        </div>
+        <footer
+          class="w-full text-center text-[10px] md:text-xs text-text-dark font-medium border border-t absolute bottom-0"
+        >
+          <span class="block my-4">© 2024 PT. Median. All Rights Reserved</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
